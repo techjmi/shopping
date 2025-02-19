@@ -14,13 +14,13 @@ const Navbar = () => {
         
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold">
-          MyShop
+          Logo
         </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
           <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
-          <li><Link to="/products" className="hover:text-gray-400">Products</Link></li>
+          {/* <li><Link to="/products" className="hover:text-gray-400">Products</Link></li> */}
           <li><Link to="/about" className="hover:text-gray-400">About</Link></li>
         </ul>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
             </button>
             <ul className="space-y-4 text-lg">
               <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-              <li><Link to="/products" onClick={() => setIsOpen(false)}>Products</Link></li>
+              {/* <li><Link to="/products" onClick={() => setIsOpen(false)}>Products</Link></li> */}
               <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
               <li><Link to="/cart" onClick={() => setIsOpen(false)}>Cart ({cartItemsCount})</Link></li>
             </ul>

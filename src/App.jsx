@@ -9,6 +9,7 @@ import { PersistGate } from "redux-persist/integration/react";
 // Lazy Load Components
 const Home = lazy(() => import('./pages/Home'));
 const Cart = lazy(() => import('./pages/Cart'));
+const About= lazy(()=>import('./pages/About'))
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/about" element={<Cart />} />
           </Routes>
         </Suspense>
       </Router>

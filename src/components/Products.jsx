@@ -53,7 +53,7 @@ const Products = () => {
       <h2 className="text-2xl font-bold mb-4">Products</h2>
       
       {/* Filters */}
-      <div className="flex gap-4 mb-4">
+      <div className="flex gap-4 mb-4 flex-col md:flex-row">
         <select onChange={(e) => setSelectedCategory(e.target.value)} className="p-2 border rounded">
           <option value="">All Categories</option>
           {categories.map(category => (

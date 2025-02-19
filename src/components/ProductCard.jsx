@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
     <div className="border p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-white">
     {/* Product Image */}
     <div className="relative overflow-hidden rounded-lg">
-      <img src={product.thumbnail} alt={product.title} className="h-48 w-full object-cover transition-transform duration-300 hover:scale-105" />
+      <img src={product.thumbnail} alt={product.title} loading='lazy' className="h-48 w-full object-cover transition-transform duration-300 hover:scale-105" />
     </div>
 
     {/* Product Title & Price */}
@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
     </div>
 
     {/* Buttons */}
-    <div className="flex flex-col md:flex-row gap-3 mt-4">
+    <div className="flex  gap-3 mt-4">
       <button 
         onClick={handleAddToCart}
         className="flex-1 bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-blue-700 transition-all"
