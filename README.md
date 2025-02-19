@@ -55,7 +55,7 @@ This is a React-based shopping cart application that fetches product data from a
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/shopping-cart.git
+   git clone https://github.com/techjmi/shopping
    cd shopping-cart
    ```
 
