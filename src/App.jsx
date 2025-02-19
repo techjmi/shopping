@@ -2,12 +2,13 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider, } from 'react-redux';
 import { Suspense, lazy } from 'react';
-import store, { persistor } from './redux/store';
+import {store,  persistor } from './redux/store';
 import Navbar from './components/Navbar';
+import 'react-toastify/dist/ReactToastify.css';
 import { PersistGate } from "redux-persist/integration/react";
 // Lazy Load Components
 const Home = lazy(() => import('./pages/Home'));
-const Cart = lazy(() => import('./components/Cart'));
+const Cart = lazy(() => import('./pages/Cart'));
 
 function App() {
   return (

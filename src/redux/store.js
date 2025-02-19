@@ -19,10 +19,10 @@ const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false, // 👈 Disables non-serializable warnings
+      serializableCheck: false, 
     }),
 });
 
-export const persistor = persistStore(store);
-export default store;
+const persistor = persistStore(store);
 
+export { store, persistor };
